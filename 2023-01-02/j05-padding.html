@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Padding</title>
+    <style>
+        body {
+            border: 5px dotted dodgerblue;
+        }
+
+        div {
+            border: 2px dashed green;
+        }
+
+        p {
+            border: 3px solid red;
+        }
+
+        /* set padding for each edge separately*/
+        #padding-separate {
+            padding-top: 100px;
+            padding-right: 200px;
+            padding-bottom: 300px;
+            padding-left: 400px
+        }
+
+        #padding-all-in-one {
+            padding: 100px 200px 300px 400px;
+        }
+
+        #padding-three {
+            /* set the top, side and bottom */
+            padding: 100px 200px 300px;
+        }
+
+        #padding-two {
+            /* set for top/bottom and side */
+            padding: 100px 300px
+        }
+
+        #padding-one {
+            /* set for each edge */
+            padding: 100px
+        }
+
+        #padding-width {
+            width: 300px;
+            padding: 100px;
+        }
+
+        #padding-width-bordered-box {
+            width: 300px;
+            padding: 100px;
+            /* box-sizing can prevent the padding added to the size of the width */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div id="padding-separate">
+    <p>The padding is set separately</p>
+</div>
+<hr>
+<div id="padding-all-in-one">
+    <p>Same padding as above but is set in one statement</p>
+</div>
+<hr>
+<div id="padding-three">
+    <p>Padding is set in one statement with three values</p>
+</div>
+<hr>
+<div id="padding-two">
+    <p>Padding is set in one statement with two values</p>
+</div>
+<hr>
+<div id="padding-one">
+    <p>Padding is set in one statement with a single value</p>
+</div>
+<hr>
+<div id="padding-width">
+    <p>if an element has a specified width, the padding added to that element will be added to the total width of the
+        element. This is often an undesirable result.
+        if an element has a specified width, the padding added to that element will be added to the total width of the
+        element. This is often an undesirable result.
+        if an element has a specified width, the padding added to that element will be added to the total width of the
+        element. This is often an undesirable result.</p>
+</div>
+<hr>
+<div id="padding-width-bordered-box">
+    <p>if an element has a specified width, the padding added to that element will be added to the total width of the
+        element. This is often an undesirable result.To keep the width at 300px, no matter the amount of padding, you
+        can use the box-sizing property. This causes the element to maintain its actual width; if you increase the
+        padding, the available content space will decrease.
+    </p>
+</div>
+</body>
+</html>
