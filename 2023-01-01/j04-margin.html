@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>A journey of CSS - 04 Margin</title>
+    <style>
+        * {
+            font-family: "Hack Nerd Font", sans-serif;
+        }
+
+        #outer-default {
+            border: 4px dashed lightcoral;
+        }
+
+        #inner-default {
+            border: 2px dotted blue;
+        }
+
+        /*Margin can be specified by four separate values.*/
+        #outer-separate {
+            border: 4px dashed lightcoral;
+        }
+
+        #inner-separate {
+            border: 1px solid red;
+            margin-top: 100px;
+            margin-bottom: 200px;
+            margin-right: 150px;
+            margin-left: 80px;
+        }
+
+        /*Margin can be specified by three values.*/
+        #outer-three {
+            border: 2px dotted lightgreen;
+        }
+
+        #inner-three {
+            border: 1px solid red;
+            /* set for: top side bottom */
+            margin: 100px 300px 500px;
+        }
+
+        /*Margin can be specified by two values.*/
+        #outer-two {
+            border: 2px dotted lightgreen;
+        }
+
+        #inner-two {
+            border: 1px solid red;
+            /* set for: side and bottom*/
+            margin: 100px 200px;
+        }
+
+        #outer-one {
+            border: 2px dotted lightgreen;
+        }
+
+        #inner-one {
+            /* set for all */
+            border: 1px solid red;
+            margin: 100px;
+        }
+
+        #outer-auto {
+            border: 2px dotted lightgreen;
+        }
+
+        #inner-auto {
+            width: 500px;
+            border: 1px solid red;
+            /* You can set the margin property to auto to horizontally center the element within its container. */
+            margin: auto;
+        }
+
+        #outer-inherit {
+            border: 2px dotted lightgreen;
+        }
+
+        #inner-inherit {
+            width: 500px;
+            border: 1px solid red;
+            /* You can set the margin property to auto to horizontally center the element within its container. */
+            margin: auto;
+        }
+
+        #in-inner-inherit {
+            width: 300px;
+            border: 1px solid red;
+            /* You can set the margin property to auto to horizontally center the element within its container. */
+            margin: inherit;
+        }
+
+        /** You may think the distance between the h1 and h2 is 50+50=100px. But actually the distance is 50px only ,
+        We call this as Margin Collapse */
+        #collapse h1 {
+            margin: 0 0 50px 0;
+        }
+
+        #collapse h2 {
+            margin: 50px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+<div id="outer-default">
+    <div id="inner-default">
+        <p>Apartments simplicity or understood do it we. Song such eyes had and off. Removed winding ask explain delight
+            out
+            few behaved lasting. Letters old hastily ham sending not sex chamber because present. Oh is indeed twenty
+            entire
+            figure. Occasional diminution announcing new now literature terminated. Really regard excuse off ten pulled.
+            Lady am room head so lady four or eyes an. He do of consulted sometimes concluded mr. An household behaviour
+            if
+            pretended.</p>
+    </div>
+</div>
+<hr>
+<div id="outer-separate">
+    <div id="inner-separate">
+        <p>Apartments simplicity or understood do it we. Song such eyes had and off. Removed winding ask explain delight
+            out
+            few behaved lasting. Letters old hastily ham sending not sex chamber because present. Oh is indeed twenty
+            entire
+            figure. Occasional diminution announcing new now literature terminated. Really regard excuse off ten pulled.
+            Lady am room head so lady four or eyes an. He do of consulted sometimes concluded mr. An household behaviour
+            if
+            pretended.</p>
+    </div>
+</div>
+<hr>
+<div id="outer-three">
+    Set for three.
+    <p id="inner-three">
+        Apartments simplicity or understood do it we. Song such eyes had and off. Removed winding ask explain delight
+        out
+        few behaved lasting. Letters old hastily ham sending not sex chamber because present. Oh is indeed twenty
+        entire
+        figure. Occasional diminution announcing new now literature terminated. Really regard excuse off ten pulled.
+        Lady am room head so lady four or eyes an. He do of consulted sometimes concluded mr. An household behaviour
+        if
+        pretended.
+    </p>
+</div>
+<hr>
+<div id="outer-two">
+    Set for two.
+    <p id="inner-two">
+        Apartments simplicity or understood do it we. Song such eyes had and off. Removed winding ask explain delight
+        out
+        few behaved lasting. Letters old hastily ham sending not sex chamber because present. Oh is indeed twenty
+        entire
+        figure. Occasional diminution announcing new now literature terminated. Really regard excuse off ten pulled.
+        Lady am room head so lady four or eyes an. He do of consulted sometimes concluded mr. An household behaviour
+        if
+        pretended.
+    </p>
+</div>
+<hr>
+<div id="outer-one">
+    Set for one.
+    <p id="inner-one">
+        Apartments simplicity or understood do it we. Song such eyes had and off. Removed winding ask explain delight
+        out
+        few behaved lasting. Letters old hastily ham sending not sex chamber because present. Oh is indeed twenty
+        entire
+        figure. Occasional diminution announcing new now literature terminated. Really regard excuse off ten pulled.
+        Lady am room head so lady four or eyes an. He do of consulted sometimes concluded mr. An household behaviour
+        if
+        pretended.
+    </p>
+</div>
+<hr>
+<div id="outer-auto">
+    Set for auto.
+    <p id="inner-auto">
+        Apartments simplicity or understood do it we. Song such eyes had and off. Removed winding ask explain delight
+        out
+        few behaved lasting. Letters old hastily ham sending not sex chamber because present. Oh is indeed twenty
+        entire
+        figure. Occasional diminution announcing new now literature terminated. Really regard excuse off ten pulled.
+        Lady am room head so lady four or eyes an. He do of consulted sometimes concluded mr. An household behaviour
+        if
+        pretended.
+    </p>
+</div>
+<hr>
+<div id="outer-inherit">
+    Set for auto.
+    <div id="inner-inherit">
+        Apartments simplicity or understood do it we. Song such eyes had and off. Removed winding ask explain delight
+        out
+        few behaved lasting. Letters old hastily ham sending not sex chamber because present. Oh is indeed twenty
+        entire
+        figure. Occasional diminution announcing new now literature terminated. Really regard excuse off ten pulled.
+        Lady am room head so lady four or eyes an. He do of consulted sometimes concluded mr. An household behaviour
+        if
+        pretended.
+        <p id="in-inner-inherit">
+            Apartments simplicity or understood do it we. Song such eyes had and off. Removed winding ask explain
+            delight
+            out
+            few behaved lasting. Letters old hastily ham sending not sex chamber because present. Oh is indeed twenty
+            entire
+            figure. Occasional diminution announcing new now literature terminated. Really regard excuse off ten pulled.
+            Lady am room head so lady four or eyes an. He do of consulted sometimes concluded mr. An household behaviour
+            if
+            pretended.
+        </p>
+    </div>
+</div>
+<div id="collapse">
+    <h1>Happy</h1>
+    <h2>New Year!</h2>
+</div>
+</body>
+</html>
