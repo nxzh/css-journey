@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Text formatting">
+    <style>
+        div {
+            border: 1px solid gray;
+            padding: 8px;
+            font-family: Hack;
+        }
+
+        h1 {
+            text-align: center;
+            /* Make the text in uppercase */
+            text-transform: uppercase;
+            color: #4CAF50;
+            /* Making more space between the letters */
+            letter-spacing: 5px;
+        }
+
+        p {
+            border: 1px green solid;
+        }
+
+        p.text-align-center {
+            /* Make some spaces before the paragraph */
+            text-indent: 50px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        p.text-align-left {
+            text-indent: 50px;
+            text-align: left;
+            letter-spacing: 1px;
+        }
+
+        p.text-align-right {
+            text-indent: 50px;
+            text-align: right;
+            letter-spacing: 1px;
+        }
+
+        p.text-align-justify {
+            text-indent: 50px;
+            text-align: justify;
+            letter-spacing: 1px;
+        }
+
+        p.text-align-last-left {
+            text-align-last: left;
+        }
+
+        p.text-align-last-right {
+            text-align-last: right;
+        }
+
+        p.text-align-last-center {
+            text-align-last: center;
+        }
+
+        p.text-align-last-justify {
+            text-align-last: justify;
+        }
+
+        p.text-direction-rtl {
+            direction: rtl;
+        }
+
+        p.text-direction-unicode-bidi {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+        span {
+            font-size: 10px;
+        }
+        span.vertical-align-baseline {
+           vertical-align: baseline;
+        }
+        span.vertical-align-text-top{
+            vertical-align: top;
+        }
+        span.vertical-align-text-bottom{
+            vertical-align: bottom;
+        }
+        span.vertical-align-sub{
+            vertical-align: sub;
+        }
+        span.vertical-align-super{
+            vertical-align: super;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>Text Formatting</h1>
+    CENTER<br>
+    <p class="text-align-center">
+        This text is styled with some text formatting properties. The heading uses the text-align,
+        text-transform,
+        and color properties.
+        The paragraph is indented, aligned, and the space between characters is specified.
+    </p>
+    LEFT<br>
+    <p class="text-align-left">
+        This text is styled with some text formatting properties. The heading uses the text-align,
+        text-transform,
+        and color properties.
+        The paragraph is indented, aligned, and the space between characters is specified.
+    </p>
+    RIGHT<br>
+    <p class="text-align-right">
+        This text is styled with some text formatting properties. The heading uses the text-align,
+        text-transform,
+        and color properties.
+        The paragraph is indented, aligned, and the space between characters is specified.
+    </p>
+    JUSTIFY, when the text-align property is set to "justify", each line is stretched so that every line has equal
+    width, and the left and right margins are straight (like in magazines and newspapers)<br>
+    <p class="text-align-justify">
+        This text is styled with some text formatting properties. The heading uses the text-align,
+        text-transform,
+        and color properties.
+        The paragraph is indented, aligned, and the space between characters is specified.
+    </p>
+    <hr>
+    Below is using <code>text-align-last: left</code><br>
+    <p class="text-align-last-left">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis
+        blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </p>
+    Below is using <code>text-align-last: right</code><br>
+    <p class="text-align-last-right">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis
+        blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </p>
+    Below is using <code>text-align-last: center</code><br>
+    <p class="text-align-last-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis
+        blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </p>
+    Below is using <code>text-align-last: justify</code><br>
+    <p class="text-align-last-justify">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis
+        blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+    </p>
+    Below is using text-directio-rtl
+    <p class="text-direction-rtl">
+        This is abcdefghijklmnopqrstuvwxyz.
+    </p>
+    Below is using text-direction-unicode-bidi
+    <p class="text-direction-unicode-bidi">
+        This is abcdefghijklmnopqrstuvwxyz.
+    </p>
+    <p>
+        This is an example of <span class="vertical-align-baseline">baseline</span>.
+    </p>
+    <p>
+        This is an example of <span class="vertical-align-text-top">text-top</span>.
+    </p>
+    <p>
+        This is an example of <span class="vertical-align-text-bottom">text-bottom</span>.
+    </p>
+    <p>
+        This is an example of <span class="vertical-align-sub">sub</span>.
+    </p>
+    <p>
+        This is an example of <span class="vertical-align-super">super</span>.
+    </p>
+</div>
+</body>
+</html>
