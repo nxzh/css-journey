@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display</title>
+    <style>
+        /*script {*/
+        /*    display: block;*/
+        /*}*/
+        #inline-list li {
+            display: inline;
+        }
+
+        #block-span span {
+            display: block;
+        }
+
+        #hidden-p p {
+            display: none;
+        }
+
+        #hidden-visibility-p p {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1 style="border: blue 1px solid">
+        I am a block. I use up the full width.
+    </h1>
+</div>
+<div>
+    <span style="border: 1px solid red">I am a san. I only use the space I need.</span>
+</div>
+<div id="inline-list">
+    <ul>
+        <li>Lattest Coffee</li>
+        <li>Latte</li>
+        <li>Espresso</li>
+    </ul>
+</div>
+<hr>
+<div id="block-span">
+    <span>This is span A.</span>
+    <span>This is span B.</span>
+</div>
+<hr>
+<div id="hidden-p">
+    <h3>Blow paragraph is invisible. It will not take space.</h3>
+    <p>You can't see this.</p>
+</div>
+<hr>
+<div id="hidden-visibility-p">
+    <h3>Below paragraph can't be seen as well, but it still takes space.</h3>
+    <p>You can't see this.</p>
+</div>
+<hr>
+</body>
+</html>
